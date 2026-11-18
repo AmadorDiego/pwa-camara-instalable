@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 1rem;
+}
+
+.encabezado h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.estado {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  background-color: #1e293b;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.5rem;
+  border-left: 3px solid #38bdf8;
+}
+
+.alerta-ios {
+  background-color: #1e293b;
+  border: 1px solid #38bdf8;
+  color: #e2e8f0;
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.tarjeta-permiso {
+  background-color: #1e293b;
+  border: 1px solid #f59e0b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tarjeta-permiso h2 {
+  font-size: 1rem;
+  color: #fbbf24;
+}
+
+.tarjeta-permiso p {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.contenedor-video {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#visor-camara {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+
+.btn-instalar {
+  background-color: #10b981;
+  color: #022c22;
+}
+
+.btn-primario {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-secundario {
+  background-color: #334155;
+  color: #f8fafc;
+}
+
+.btn-peligro {
+  background-color: #ef4444;
+  color: #ffffff;
+}
