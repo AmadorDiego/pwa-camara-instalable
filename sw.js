@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pwa-camara-v1';
+const CACHE_NAME = 'pwa-camara-v2';
 const ARCHIVOS_PRECACHE = [
   './',
   './index.html',
